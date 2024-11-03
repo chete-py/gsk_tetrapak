@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import reveal_slides as rs
 
 view1, view2 = st.tabs(["Insurer Terms", "Test📈"])
 
