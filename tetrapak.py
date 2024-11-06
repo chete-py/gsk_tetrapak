@@ -5,20 +5,6 @@ view1, view2 = st.tabs(["Insurer Terms", "Test📈"])
 
 with view1:
 
-    header_style = """
-        <style>
-            .newdf th {
-                background-color: #4CAF50; /* Green background for header row */
-                color: white;              /* White text color */
-                text-align: left;           /* Align text to the left */
-                padding: 8px;
-            }
-            .newdf td {
-                text-align: left;           /* Align cell text to the left */
-                padding: 8px;
-            }
-        </style>
-        """
 
     st.markdown("We thank you for giving us the opportunity to obtain the most competitive terms with respect to your Motor Insurance Policy.")
    
