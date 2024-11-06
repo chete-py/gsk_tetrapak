@@ -75,11 +75,18 @@ with view2:
     elif value > 2500000:
         cannon_rate = 3.5
         cannon_premium = (value * (cannon_rate/100) * (days/365))
-    
-    
-    if value > 0:
+
+    if value < 2000000:
         apa_rate = 3.5
-        apa_premium = max(value * (apa_rate/100) * (days/365), (25000 * (days/365)))
+        cannon_premium = max(value * (apa_rate/100) * (days/365),(25000 * (days/365)))
+    elif value > 2000000:
+        cannon_rate = 3.25
+        apa_rate= (value * (apa_rate/100) * (days/365))
+    
+    
+    # if value > 0:
+    #     apa_rate = 3.5
+    #     apa_premium = max(value * (apa_rate/100) * (days/365), (25000 * (days/365)))
    
     if value > 0:
         fidelity_rate = 3.5               
