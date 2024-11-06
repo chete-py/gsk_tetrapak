@@ -60,11 +60,12 @@ with view2:
         apa_premium = max(value * (apa_rate/100) * (days/365), (25000 * (days/365)))
    
     if value > 0:
-        fidelity_rate = 4               
+        fidelity_rate = 3.5               
         fidelity_one = (value * (fidelity_rate/100) * (days/365))
-        fidelity_premium = max(fidelity_one, 25000)                 
+        fidelity_premium = max(fidelity_one, 30000)                 
     
     car_hire = 0
+    car_hire_nil = 0    
     car_hire_two = 0
     fee = 100
     ex_pr = 0
@@ -76,11 +77,12 @@ with view2:
             car_hire += 0
             car_hire_two += 0
         elif loss_of_use == 'Inclusive':
+            car_hire_nil += 0
             car_hire += 1500
             car_hire_two += 3000       
                         
         cannon_gross_premium = (cannon_premium + car_hire_two)
-        fidelity_gross_premium = (fidelity_premium + car_hire)        
+        fidelity_gross_premium = (fidelity_premium + car_hire_nil)        
         apa_gross_premium = ( apa_premium + car_hire_two)
         
         cannon_levies = cannon_gross_premium * 0.0045
