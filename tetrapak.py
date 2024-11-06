@@ -35,7 +35,7 @@ with view1:
         st.write(newdf2.to_html(index=False), unsafe_allow_html=True)
 
     with tab3:
-        cannon = [['Basic Premium', 'Banded'], ['Minimum Premium', 3000], ['Excess Protector', 'Inclusive'], ['Political Violence and Terrorism Risks', 'Inclusive'], ['Loss Of Use/Courtsey Car', 3000]]
+        cannon = [['Basic Premium', 'Banded'], ['Minimum Premium', 30000], ['Excess Protector', 'Inclusive'], ['Political Violence and Terrorism Risks', 'Inclusive'], ['Loss Of Use/Courtsey Car', 3000]]
 
         df3 = pd.DataFrame(cannon, columns = ['CANNON', 'Value'])  
 
