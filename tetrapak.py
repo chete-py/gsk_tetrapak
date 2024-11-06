@@ -7,13 +7,13 @@ with view1:
 
     header_style = """
         <style>
-            .dataframe th {
+            .newdf th {
                 background-color: #4CAF50; /* Green background for header row */
                 color: white;              /* White text color */
                 text-align: left;           /* Align text to the left */
                 padding: 8px;
             }
-            .dataframe td {
+            .newdf td {
                 text-align: left;           /* Align cell text to the left */
                 padding: 8px;
             }
