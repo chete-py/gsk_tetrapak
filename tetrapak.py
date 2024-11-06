@@ -24,6 +24,8 @@ with view1:
         # Display the table without the index and apply the custom CSS
         st.write(table_html, unsafe_allow_html=True)
 
+        st.markdown( 'Windscreen and Entertainment Unit limit of 50K')
+
     with tab2:
         apa = [['Basic Premium', '3.5%'], ['Minimum Premium', 25000], ['Excess Protector', 'Inclusive'], ['Political Violence and Terrorism Risks', 'Inclusive'], ['Loss Of Use/Courtsey Car', 3000]]
 
@@ -34,6 +36,8 @@ with view1:
 
         # Display the table without the index in Streamlit
         st.write(newdf2.to_html(index=False), unsafe_allow_html=True)
+
+        st.markdown( 'Windscreen and Entertainment Unit limit of 100K')
 
     with tab3:
         cannon = [['Basic Premium', 'Banded'], ['Minimum Premium', 30000], ['Excess Protector', 'Inclusive'], ['Political Violence and Terrorism Risks', 'Inclusive'], ['Loss Of Use/Courtsey Car', 3000]]
