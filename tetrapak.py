@@ -111,6 +111,7 @@ with view2:
         
         
         formatted_car_hire = format_with_commas(car_hire)
+        formatted_car_hire_nil = format_with_commas(car_hire_nil)
         formatted_car_hire_two = format_with_commas(car_hire_two)
 
         
@@ -247,7 +248,7 @@ with view2:
                 <td style="color:red" >{loss_of_use}</td>
                 <td>{formatted_car_hire_two}</td>
                 <td style="color:red" >{loss_of_use}</td>
-                <td>{formatted_car_hire}</td>
+                <td>{formatted_car_hire_nil}</td>
                
                 
             </tr>      
