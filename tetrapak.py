@@ -10,7 +10,7 @@ with view1:
     tab1, tab2, tab3 = st.tabs(["Fidelity Insurance", "APA Insurance",  "Metropolitan Cannon"])
     
     with tab1:
-        fidelity = [['Basic Premium', '4%'], ['Minimum Premium', 25000], ['Excess Protector', 'Inclusive'], ['Political Violence and Terrorism Risks', 'Inclusive'], ['Loss Of Use/Courtsey Car', 1500]]
+        fidelity = [['Basic Premium', '3.5%'], ['Minimum Premium', 30000], ['Excess Protector', 'Inclusive'], ['Political Violence and Terrorism Risks', 'Inclusive'], ['Loss Of Use/Courtsey Car', 'Inclusive']]
 
         df = pd.DataFrame(fidelity, columns = ['Fidelity', 'Value'])  
 
@@ -33,6 +33,20 @@ with view1:
 
         # Display the table without the index in Streamlit
         st.write(newdf2.to_html(index=False), unsafe_allow_html=True)
+
+     with tab3:
+        cannon = [['Basic Premium', 'Banded'], ['Minimum Premium', 3000], ['Excess Protector', 'Inclusive'], ['Political Violence and Terrorism Risks', 'Inclusive'], ['Loss Of Use/Courtsey Car', 3000]]
+
+        df3 = pd.DataFrame(cannon, columns = ['CANNON', 'Value'])  
+
+        # Reset the index to remove the original one
+        newdf3 = df3.reset_index(drop=True)
+
+        # Add custom CSS to align headers to the left
+        table_html_3 = newdf3.to_html(index=False)
+        
+        # Display the table without the index and apply the custom CSS
+        st.write(table_html_3, unsafe_allow_html=True)
         
         
 
