@@ -48,6 +48,9 @@ with view1:
         
         # Display the table without the index and apply the custom CSS
         st.write(table_html_3, unsafe_allow_html=True)
+
+        st.markdown( 'For vehicle below 2.5M a rate of 4% will apply')
+        st.markdown( 'For vehicle above 2.5M a rate of 3.5% will apply')
         
         
 
